@@ -1,0 +1,5 @@
+@mixin calc_nav_opt_width($opt_number) {
+  $width: 100 / $opt_number;
+  width: $width * 1%;
+  max-width: $width * 1%;
+}

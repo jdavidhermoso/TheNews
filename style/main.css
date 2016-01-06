@@ -1,0 +1,50 @@
+/* Basic layout */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.tn-content-wrapper {
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto; }
+
+/*  Links */
+a {
+  text-decoration: none;
+  color: #000000; }
+
+/*  Images */
+img {
+  width: 100%;
+  max-width: 100%; }
+
+/* Helper classes */
+.tn-hidden {
+  display: none; }
+
+/* Header logo */
+.tn-hdr-logo-container {
+  width: 30%;
+  max-width: 30%;
+  margin: 0 auto; }
+
+/* Navbar */
+nav.tn-nav {
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap; }
+  nav.tn-nav .tn-hdr-nav-opt {
+    width: 20%;
+    max-width: 20%;
+    white-space: normal;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0; }
+
+/*  */
+
+/*# sourceMappingURL=main.css.map */
