@@ -1,0 +1,18 @@
+@font-face {
+  font-family: press_font;
+  src: url(../fonts/OldNewspaperTypes.ttf);
+}
+
+h2 {
+  font-size: 18px;
+}
+h3,h4,h5 {
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,p,a,span {
+  font-family: press_font;
+}
+
+/* Header */
+
