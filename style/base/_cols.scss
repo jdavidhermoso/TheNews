@@ -1,7 +1,5 @@
 .col-container {
   overflow: hidden;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 
@@ -22,6 +20,7 @@ $col_padding: 15px;
     .col-sm-#{$z} {
       @include calc_columns_width($z);
       float: left;
+      box-sizing: border-box;
     }
   }
 }
@@ -34,6 +33,7 @@ $col_padding: 15px;
       float: left;
       padding-left: $col_padding;
       padding-right: $col_padding;
+      box-sizing: border-box;
     }
   }
 }
@@ -45,6 +45,7 @@ $col_padding: 15px;
         float: left;
         padding-left: $col_padding;
         padding-right: $col_padding;
+        box-sizing: border-box;
       }
     }
   }
