@@ -1,0 +1,50 @@
+.col-container {
+  overflow: hidden;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+/* Column generation */
+$col_padding: 15px;
+
+@mixin calc_columns_width($width_in_columns) {
+
+  //100% / width_over_10_columns
+  $width: ( ( ($width_in_columns * 1%) / 12) * 100);
+  width: $width;
+  max-width: $width;
+}
+
+@for $z from 1 through 12 {
+
+  @media (min-width: $sm_min+"px") and (max-width: $md_min+"px") {
+    .col-sm-#{$z} {
+      @include calc_columns_width($z);
+      float: left;
+    }
+  }
+}
+
+@for $z from 1 through 12 {
+
+  @media (min-width: $md_min+"px") and (max-width: $lg_min+"px") {
+    .col-md-#{$z} {
+      @include calc_columns_width($z);
+      float: left;
+      padding-left: $col_padding;
+      padding-right: $col_padding;
+    }
+  }
+}
+
+  @for $z from 1 through 12 {
+    @media (min-width: $lg_min+"px") {
+      .col-lg-#{$z} {
+        @include calc_columns_width($z);
+        float: left;
+        padding-left: $col_padding;
+        padding-right: $col_padding;
+      }
+    }
+  }
