@@ -6,7 +6,8 @@ html, body {
   height: 100%;
   max-height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 html {
   background-image: url("../images/bg.jpg");
@@ -19,7 +20,17 @@ html {
 .tn-content-wrapper {
   width: 90%;
   max-width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 10px; }
+
+.col-container {
+  /* Aside & Section */ }
+  .col-container aside:nth-of-type(1) {
+    border-right: 1px solid #000000; }
+  .col-container aside:nth-of-type(2) {
+    border-left: 1px solid #000000; }
+  .col-container aside p, .col-container section p {
+    text-overflow: ellipsis; }
 
 /*  Links */
 a {
@@ -324,15 +335,16 @@ p, a, span {
 
 /* Header logo */
 .tn-hdr-logo-container {
-  width: 30%;
-  max-width: 30%;
+  width: 25%;
+  max-width: 25%;
   margin: 0 auto; }
 
 /* Navbar */
 nav.tn-nav {
   width: 100%;
   max-width: 100%;
-  white-space: nowrap; }
+  white-space: nowrap;
+  clear: both; }
   nav.tn-nav .tn-hdr-nav-opt {
     width: 20%;
     max-width: 20%;

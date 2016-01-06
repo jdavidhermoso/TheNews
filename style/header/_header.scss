@@ -2,8 +2,8 @@
 
 /* Header logo */
 .tn-hdr-logo-container  {
-  width: 30%;
-  max-width: 30%;
+  width: 25%;
+  max-width: 25%;
   margin: 0 auto;
 }
 
@@ -12,6 +12,7 @@ nav.tn-nav {
   width: 100%;
   max-width: 100%;
   white-space: nowrap;
+  clear: both;
 
   .tn-hdr-nav-opt {
     @include calc_nav_opt_width(5);

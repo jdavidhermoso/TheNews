@@ -6,6 +6,7 @@ html, body {
   max-height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 html {
   background-image: url('../images/bg.jpg');
@@ -20,7 +21,27 @@ html {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
+
+.col-container {
+  /* Aside & Section */
+  aside:nth-of-type(1) {
+    border-right: 1px solid #000000;
+  }
+  aside:nth-of-type(2) {
+
+    border-left: 1px solid #000000;
+  }
+  aside, section {
+
+    p {
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+
 
 /*  Links */
 a {
