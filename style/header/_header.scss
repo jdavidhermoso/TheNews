@@ -36,29 +36,42 @@ nav.tn-nav {
 
 @media (max-width: $md_min+px) {
   nav.tn-nav {
-    height: 45px;
-    max-height: 45px;
     .tn-nav-mobile-btn {
+      width: 100%;
+      max-width: 100%;
       display: block;
       font-size: 30px;
-      float: right;
-      border-radius: 4px;
 
+      border-radius: 4px;
       margin: 0;
       padding: 0;
+    }
+      
+
+    .tn-nav-opt-container {
+      display: block;
+    }
+
+
+    .tn-nav-opt-container.open {
+      display: block;
+    }
+    .tn-nav-opt-container.closed {
+      display: none;
     }
 
     .tn-hdr-nav-opt {
       width: 100%;
       max-width: 100%;
-
-      white-space: normal;
-      display: none;
+      display: block;
       text-align: center;
       padding: 10px 0;
 
     }
 
+  }
+  nav.tn-nav > .tn-nav-opt-container.open {
+    height: auto!important;
   }
 }
 
