@@ -34,6 +34,41 @@ nav.tn-nav {
   }
 }
 
+@media (max-width: $md_min+px) {
+  nav.tn-nav {
+    height: 45px;
+    max-height: 45px;
+    .tn-nav-mobile-btn {
+      display: block;
+      font-size: 30px;
+      float: right;
+      border-radius: 4px;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    .tn-hdr-nav-opt {
+      width: 100%;
+      max-width: 100%;
+
+      white-space: normal;
+      display: none;
+      text-align: center;
+      padding: 10px 0;
+
+    }
+
+  }
+}
+
+@media (min-width: $md_min+px){
+  .tn-nav-mobile-btn {
+    display: none;
+  }
+}
+
+
 .tn-hdr-info {
   width: 100%;
   max-width: 100%;
