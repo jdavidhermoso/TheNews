@@ -15,7 +15,7 @@ nav.tn-nav {
   clear: both;
 
   .tn-hdr-nav-opt {
-    @include calc_nav_opt_width(5);
+    @include calc_nav_opt_width(4);
     white-space: normal;
     display: inline-block;
     text-align: center;
