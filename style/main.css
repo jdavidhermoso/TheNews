@@ -366,16 +366,23 @@ nav.tn-nav {
 
 @media (max-width: 992px) {
   nav.tn-nav .tn-nav-mobile-btn {
-    width: 100%;
-    max-width: 100%;
+    width: 10%;
+    max-width: 10%;
     display: block;
     font-size: 30px;
     border-radius: 4px;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    cursor: pointer; }
   nav.tn-nav .tn-nav-opt-container {
     display: block; }
   nav.tn-nav .tn-nav-opt-container.open {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #af8454;
+    border-radius: 4px;
     display: block; }
   nav.tn-nav .tn-nav-opt-container.closed {
     display: none; }
