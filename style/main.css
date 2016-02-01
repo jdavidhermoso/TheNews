@@ -369,6 +369,7 @@ nav.tn-nav {
     width: 10%;
     max-width: 10%;
     display: block;
+    float: right;
     font-size: 30px;
     border-radius: 4px;
     margin: 0;
@@ -379,7 +380,7 @@ nav.tn-nav {
   nav.tn-nav .tn-nav-opt-container.open {
     width: 90%;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 45px auto;
     position: fixed;
     background-color: #af8454;
     border-radius: 4px;
@@ -402,6 +403,7 @@ nav.tn-nav {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
+  clear: both;
   padding-top: 5px;
   padding-bottom: 5px;
   border-top: 2px solid #000000;
